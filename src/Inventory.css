@@ -1,0 +1,15 @@
+.Inventory {
+    background-color: rgb(156, 95, 16);
+    margin: 1em;
+    padding: 1em 5em;
+    box-shadow: 0 10px rgb(83, 40, 11);
+    border-radius: 5px;
+}
+
+.Inventory-Total-List {
+    display: inline-block;
+}
+
+.Inventory-Fulfilled-List {
+    display: inline-block;
+}

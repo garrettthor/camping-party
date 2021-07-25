@@ -1,0 +1,11 @@
+.CampingGroup {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 26em;
+    margin: 1em;
+    padding:  1em 5em;
+    background-color: rgb(132, 182, 33);
+    box-shadow: 0 10px rgb(92, 128, 22);
+    border-radius: 5px;
+}

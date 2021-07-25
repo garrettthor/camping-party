@@ -1,0 +1,8 @@
+.Destination {
+    background-color: rgb(240, 65, 65);
+    margin: 0.5em;
+    padding: 1em 5em;
+    box-shadow: 0 10px rgb(141, 17, 17);
+    border-radius: 5px;
+    width: 60em;
+}
