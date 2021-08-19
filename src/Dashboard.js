@@ -16,8 +16,12 @@ class Dashboard extends Component {
     render() {
         return(
             <div className="Dashboard">
-                <h1>Welcome to Camping Party!</h1>
-                <Destination />
+                <h1>Welcome to the Party!</h1>
+                <Destination 
+                        destination="Aza Borego"
+                        dptr="9/6"
+                        rtn="9/14"
+                />
                 <div className="Dashboard-Container">
                 <div className="Dashboard-Left">
                     <CampingGroup />

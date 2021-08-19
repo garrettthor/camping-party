@@ -5,17 +5,40 @@ class Inventory extends Component {
     constructor(props) {
         super(props)
         this.state = {
-
+            expanded: false
         };
+        this.expand = this.expand.bind(this)
+
+    }
+
+    expand() {
+        console.log(this.state.expanded)
+        if (!this.state.expanded) {
+            document.querySelector('.Inventory').style = 'overflow: visible;';
+            document.querySelector('.Inventory').style = 'height: auto;';
+            (this.setState({expanded: true}))
+            console.log('Expanded')
+        } else {
+            document.querySelector('.Inventory').style = 'overflow: hidden;'
+            document.querySelector('.Inventory').style = 'height: 22em;'
+            this.setState({expanded: false})
+            console.log('Collapsed')
+        }
     }
 
     render() {
         return (
             <div className="Inventory">
-                <h2>Camping Gear</h2>
+                <div className="Inventory-Header-Bar">
+                    <button className="btn" id="Inventory-Expand-Btn" onClick={this.expand}>...</button>
+                    <button className="btn" id="Inventory-Add-Btn">+</button>
+                </div>
+                <h2>Inventory</h2>
+                
                 {/* Each item should be a Component */}
                 {/* two sides - still needed/unclaimed and fulfilled */}
-                    <div className="Inventory-Total-List">
+                <div className="Inventory-List-Container">
+                <div className="Inventory-Total-List">
                         <h3>Total List</h3>
                         <ul>
                             <li>Beef Jerk</li>
@@ -25,6 +48,13 @@ class Inventory extends Component {
                             <li>Whiskey</li>
                             <li>Lighter</li>
                             <li>Socks</li>
+                            <li>Fire Starters</li>
+                            <li>Fire Starters</li>
+                            <li>Fire Starters</li>
+                            <li>Fire Starters</li>
+                            <li>Fire Starters</li>
+                            <li>Fire Starters</li>
+                            <li>Fire Starters</li>
                             <li>Fire Starters</li>
                         </ul>
                     </div>
@@ -40,6 +70,8 @@ class Inventory extends Component {
                             <li>Hammock</li>
                         </ul>
                     </div>
+                </div>
+                    
             </div>
         );
     }

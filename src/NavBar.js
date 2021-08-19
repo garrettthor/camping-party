@@ -4,13 +4,16 @@ import './NavBar.css';
 class NavBar extends Component {
     constructor(props) {
         super(props)
+        this.state = {
+            
+        }
     }
 
     render(){
         return(
             <div className="NavBar">
                 <div className="NavBar-Logo">
-                    <h1>CAMPPARTY</h1>
+                    <h1>CAMPARTY</h1>
                 </div>
                 <div>
                     <ul>

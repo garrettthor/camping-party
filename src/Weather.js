@@ -13,6 +13,8 @@ class Weather extends Component {
         return(
             <div className="Weather">
                 <h2>Current Weather for LOCATION</h2>
+                {/* API data for 5 day forecast */}
+
             </div>
         );
     }

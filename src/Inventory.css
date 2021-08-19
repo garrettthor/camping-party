@@ -1,15 +1,52 @@
 .Inventory {
-    background-color: rgb(156, 95, 16);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(199, 157, 103);
     margin: 1em;
-    padding: 1em 5em;
-    box-shadow: 0 10px rgb(83, 40, 11);
+    padding: 1em 1em;
+    box-shadow: 0 10px rgb(131, 61, 15);
     border-radius: 5px;
+    height: 22em;
+    width: 26em;
+    overflow: hidden;
+}
+
+.Inventory-Header-Bar {
+    display: flex;
+    justify-content: right;
+}
+
+.Inventory-List-Container {
+    display: flex;
+    flex-direction: row;
 }
 
 .Inventory-Total-List {
-    display: inline-block;
+    
 }
 
 .Inventory-Fulfilled-List {
-    display: inline-block;
+    
+}
+
+.btn {
+    background-color: rgb(229, 162, 135);
+    border: 0;
+    box-shadow: 0 4px rgb(131, 61, 15);
+    border-radius: 3px;
+    height: 26px;
+    width: 30px;
+    margin: 5px;
+}
+
+.btn:hover {
+    color: white;
+    cursor: pointer;
+    background-color:rgb(131, 61, 15);
+    box-shadow: 0 4px rgb(229, 162, 135);
+    transition: 0.2s;
+}
+
+#Inventory-Expand-Btn {
+    
 }

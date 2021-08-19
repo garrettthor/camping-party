@@ -1,8 +1,43 @@
 .Destination {
     background-color: rgb(240, 65, 65);
     margin: 0.5em;
-    padding: 1em 5em;
+    padding: 1em 1em;
     box-shadow: 0 10px rgb(141, 17, 17);
     border-radius: 5px;
-    width: 60em;
+    width: 68em;
+}
+
+.Destination-Header-Bar {
+    display: flex;
+    justify-content: right;
+}
+
+.Destination-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Destination-Map {
+    height: 150px;
+    width: 300px;
+    box-shadow: 0 10px rgb(141, 17, 17);
+}
+
+#Destination-Edit-Btn {
+    background-color: rgb(229, 162, 135);
+    border: 0;
+    box-shadow: 0 4px rgb(131, 61, 15);
+    border-radius: 3px;
+    height: 26px;
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+#Destination-Edit-Btn:hover {
+    color: white;
+    cursor: pointer;
+    background-color:rgb(131, 61, 15);
+    box-shadow: 0 4px rgb(229, 162, 135);
+    transition: 0.2s;
 }
